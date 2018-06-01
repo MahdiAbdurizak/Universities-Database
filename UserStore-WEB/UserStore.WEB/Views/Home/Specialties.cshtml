@@ -1,0 +1,69 @@
+﻿@model Distance.WEB.Models.СпециальностиViewModel
+
+@{
+    ViewBag.Title = "Specialties";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Specialties</h2>
+
+<div>
+    <h4>СпециальностиViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Специальность)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Специальность)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Сокр_название)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Сокр_название)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Код_Направление)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Код_Направление)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Направление)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Направление)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Профиль)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Профиль)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Язык_Обуения)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Язык_Обуения)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

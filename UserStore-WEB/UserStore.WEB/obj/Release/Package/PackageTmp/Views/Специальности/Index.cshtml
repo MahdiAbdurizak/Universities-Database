@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Distance.WEB.Models.СпециальностиViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Код_Специальности)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Специальность)
+        </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.Код_Направление)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Направление)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Профиль)
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Сокр_название)*@
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Язык_Обуения)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Код_Специальности)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Специальность)
+        </td>*@
+        <td>
+            @*@Html.DisplayFor(modelItem => item.Код_Направление)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Направление)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Профиль)
+        </td>
+
+        <td>
+            @*@Html.DisplayFor(modelItem => item.Сокр_название)*@
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Язык_Обуения)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.Код_Направление }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.Код_Направление }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.Код_Направление })
+        </td>
+    </tr>
+}
+
+</table>

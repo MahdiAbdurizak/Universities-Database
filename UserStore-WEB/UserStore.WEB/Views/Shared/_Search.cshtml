@@ -1,0 +1,7 @@
+﻿<div class="search">
+    @using (Html.BeginForm("Search", "Home", FormMethod.Post))
+    { 
+        <input type="text" name="searchName" id="searchName" class="search-form" autocomplete="off" placeholder="Search">
+        <i class="fa fa-search"></i>
+    }
+</div>

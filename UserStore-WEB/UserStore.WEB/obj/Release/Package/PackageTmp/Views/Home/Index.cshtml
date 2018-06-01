@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Distance.WEB.Models.УниверситетыViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <h3>Universities</h3>
+    
+</div>
+<div class="panel panel-default" style="padding:15px">
+   
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            
+            <div class="col-md-3 thumbnail" style="margin-left:20px ; margin-bottom:30px;">
+                <img src="@item.URLизображения " />
+                <h3>@Html.DisplayFor(modelItem => item.Университет) </h3>
+                <h5>@Html.DisplayFor(modelItem => item.город) </h5>
+                @Html.ActionLink("Specialties", "Specialties", new { Id = item.Код_Университета }, new { @class = "btn btn-primary" })
+
+
+            </div>
+        }
+
+      
+    </div>
+    </div>

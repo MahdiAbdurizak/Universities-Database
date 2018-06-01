@@ -1,0 +1,14 @@
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\UserStore.DAL.dll.config
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\UserStore.DAL.dll
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\UserStore.DAL.pdb
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\EntityFramework.dll
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\EntityFramework.xml
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\obj\Debug\UserStore.DAL.dll
+c:\users\yahye\documents\visual studio 2015\Projects\UserStore.WEB\UserStore.DAL\obj\Debug\UserStore.DAL.pdb
+C:\Users\Yahye\Documents\Visual Studio 2015\Projects\UserStore.WEB\UserStore.DAL\obj\Debug\UserStore.DAL.csprojResolveAssemblyReference.cache

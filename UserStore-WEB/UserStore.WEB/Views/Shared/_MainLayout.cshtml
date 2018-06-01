@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width " />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    
+</head>
+<body>
+   
+        <!--Navbar-->
+        <nav class="navbar navbar-default navbar-fixed-top" >
+            <div class="Container" >
+                <div class="navbar-header" >
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
+                      <span class="icon-bar" ></span> 
+                      <span class="icon-bar"></span> 
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a href="#" class="navbar-brand">
+                        <img src="~/images/Amarok-logo-small.png" class="logo-size" />
+                    </a>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" >
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-home" ></i>
+                                الرئيسيه
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-info-sign"></i>
+                                حول الموقع
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                                اتصل بنا
+                            </a>
+                        </li>
+                        <li>
+                            @using (Html.BeginForm("Search","Home",FormMethod.Post)) //when push enter = post becouse we have a form
+                            {
+                                <input type="text" name="searchName" id="searchName" placeholder="ابجث هنا.." />
+                            }
+                               
+                           
+                        </li>
+
+                    </ul>
+                   <!--partial Login-->
+                    @Html.Partial("_Login") 
+                </div>
+            </div>
+        </nav>
+        <div class="Container">
+            <div class="row" >
+
+                @RenderBody()
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="myfooter">
+            <div class="Container" >
+                <div class="row">
+                    <div class="col-md-4" >
+                        <h3>
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            من نحن ؟
+                        </h3>
+                        <p>
+                            أكاديمية المبرمجين العرب عبارة عن فضاء تعليمي وأدبي؛ يعرض إسهامات وكتب ودورات وبرامج ومقالات العبد الفقير لله خالد السعداني.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>
+                            <i class="glyphicon glyphicon-globe"></i>
+                            روابط هامه
+                        </h3>
+                        <ul>
+                            <li><a href="#">وطائق للقطاع العام</a></li>
+                            <li><a href="#">وطائق للقطاع الخاص</a></li>
+                            <li><a href="#">وطائق حارج البلاد</a></li>
+                            <li><a href="#">وطائق متنوعه</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>
+                            <i class="glyphicon glyphicon-envelope" ></i>
+                            تواصل معنا
+                        </h3>
+                        <ul>
+                            <li><a href="#">صفحتنا علي الفيس بوك</a></li>
+                            <li><a href="#">تابعنا علي تويتر</a></li>
+                            <li><a href="#">شاهدنا علي اليوتيوب</a></li>
+                            <li><a href="#">اترك لنا رساله</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="subfooter">
+                <span> جميع الحقوق محفوطه لموقع التوطيف-2017</span>
+            </div>
+
+
+        </footer>
+   
+    <script src="~/scripts/jquery.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script> 
+    
+    @RenderSection("scripts" ,required:false) 
+</body>
+</html>

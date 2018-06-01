@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Distance.WEB.Models.УниверситетыViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+   
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Код_Университета)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Университет)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.О_Университете )
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.URLизображения)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.город)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Код_Университета)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Университет)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.О_Университете)
+        </td>
+
+        <td>
+            <img src="@item.URLизображения " class="thumbnail" style="width:48px;height:48px;" />
+            @*@Html.DisplayFor(modelItem => item.URLизображения)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.город)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.Код_Университета  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.Код_Университета  }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.Код_Университета  })
+        </td>
+    </tr>
+}
+
+</table>

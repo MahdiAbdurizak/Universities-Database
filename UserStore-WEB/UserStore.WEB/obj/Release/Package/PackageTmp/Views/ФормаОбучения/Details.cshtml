@@ -1,0 +1,35 @@
+﻿@model Distance.WEB.Models.ФормаОбученияViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ФормаОбученияViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Код_ФормаОбуения)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Код_ФормаОбуения)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Форма_Обучения)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Форма_Обучения)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.Код_ФормаОбуения }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
